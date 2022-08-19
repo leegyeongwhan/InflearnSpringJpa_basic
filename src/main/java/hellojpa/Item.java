@@ -3,19 +3,15 @@
 //import javax.persistence.*;
 //
 //@Entity
-//public class Child {
+//@Inheritance(strategy = InheritanceType.JOINED)
+//@DiscriminatorColumn
+//public class Item {
 //
-//    @Id
-//    @GeneratedValue
-//    @Column(name = "MEMBER_ID")
+//    @Id@GeneratedValue
 //    private Long id;
 //
 //    private String name;
-//
-//
-//    @ManyToOne
-//    @JoinColumn(name = "parent_id")
-//    private Parent parent;
+//    private int price;
 //
 //    public Long getId() {
 //        return id;
@@ -33,11 +29,11 @@
 //        this.name = name;
 //    }
 //
-//    public Parent getParent() {
-//        return parent;
+//    public int getPrice() {
+//        return price;
 //    }
 //
-//    public void setParent(Parent parent) {
-//        this.parent = parent;
+//    public void setPrice(int price) {
+//        this.price = price;
 //    }
 //}

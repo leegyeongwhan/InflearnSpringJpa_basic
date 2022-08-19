@@ -5,26 +5,15 @@
 //import java.util.List;
 //
 //@Entity
-//public class Parent {
-//
+//public class Product {
 //    @Id
 //    @GeneratedValue
-//    @Column(name = "MEMBER_ID")
 //    private Long id;
 //
 //    private String name;
 //
-//    @OneToMany(mappedBy = "parent",cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<Child> childList = new ArrayList<>();
-//
-//    public void addChild(Child child) {
-//        childList.add(child);
-//        child.setParent(this);
-//    }
-//
-//    public List<Child> getChildList() {
-//        return childList;
-//    }
+//    @OneToMany(mappedBy = "product")
+//    private List<MemberProduct> memberProducts = new ArrayList<>();
 //
 //    public Long getId() {
 //        return id;
